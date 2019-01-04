@@ -20,48 +20,21 @@ public class App {
 		
 		//printCarByColor(cars, "Red");
 		//printCarsPriceRange(cars, 15000, 18500);
-		System.out.println("Printing cars between 18000 and 22000");
-		printCars(cars, new CarCondition() {
-
-			@Override
-			public boolean test(Car c) {
-				return c.getPrice() >= 18000 && c.getPrice() <= 22000;
-			}
-			
-		});
-		System.out.println("Printing cars that are blue");
-		printCars(cars, new CarCondition() {
-			@Override
-			public boolean test(Car c) {
-				return c.getColor().equals("Blue");
-			}
-			
-		});
-	}
-	
-	public static void printCars(List<Car> cars, CarCondition condition) {
-		for(Car c : cars) {
-			if(condition.test(c)) {
-				c.printCar();
-			}
-		}
 		
-	}
-	
-	/*public static void printCarsPriceRange(List<Car> cars, int low, int high) {
-		for (Car c : cars) {
-			if (low <= c.getPrice() && c.getPrice() <= high) {
-				c.printCar();
-			}
-		}
+		System.out.println("Printing cars between 18000 and 22000");		
+		printCars(cars, (c) -> c.getPrice() >= 18000 && c.getPrice() <= 22000);
+		
+		System.out.println("Printing blue cars.");
+		printCars(cars, (c) ->  c.getColor().equals("Blue"));
 	}
 
-	public static void printCarByColor(List<Car> cars, String color) {
+	public static void printCars(List<Car> cars, Condition<Car> condition) {
 		for (Car c : cars) {
-			if (c.getColor().equals(color)) {
+			if (condition.test(c)) {
 				c.printCar();
 			}
 		}
-	}*/
+
+	}
 
 }

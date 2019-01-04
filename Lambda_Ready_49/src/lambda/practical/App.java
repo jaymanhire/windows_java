@@ -32,7 +32,7 @@ public class App {
 		for (Car c : cars) {
 			if (condition.test(c)) {
 				c.printCar();
-			} 
+			}  
 		}
 
 	}

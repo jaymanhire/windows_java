@@ -10,7 +10,7 @@ public class InstanceInit {
 	public static void main(String[] args) throws Exception {
 
 		System.out.println("Starting application...");
-		ArrayList<Olive> olives = OliveJar.olives;
+		ArrayList<Olive> olives = new OliveJar(10, "Kalamata", 0x000000).olives;
 		for (Olive o:olives) {
 			System.out.println("It's a " + o.oliveName
 					+ " olive!");

@@ -1,4 +1,4 @@
-package ds.stack;
+package ds.stack.stringreverse;
 
 public class Stack {
 

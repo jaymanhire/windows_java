@@ -10,24 +10,8 @@ public class Application {
 		
 		Circle myCircle = new Circle();
 		drawing.setShape(myCircle);
-		drawing.drawShape();
-		
-		
+		drawing.drawShape();		
 
-		/*Shape shape = new Triangle();
-		myDrawMethod(shape);*/
-
-		/*
-		 * Triangle myTriangle = new Triangle(); myTriangle.draw();
-		 * 
-		 * Circle myCircle = new Circle(); myCircle.draw();
-		 */
-
-		/*
-		 * Shape shape = new Triangle(); shape.draw();
-		 * 
-		 * Shape shape2 = new Circle(); shape2.draw();
-		 */
 	}
 
 	public static void myDrawMethod(Shape shape) {

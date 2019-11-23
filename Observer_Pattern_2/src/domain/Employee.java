@@ -10,7 +10,7 @@ public class Employee {
 	private boolean working;
 	public int employeeID;
 
-	private static int COUNTER;
+	private static int COUNTER = 1;
 
 	public Employee(String name, Date hireDate, int salary, boolean working) {
 		this.name = name;

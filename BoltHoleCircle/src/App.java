@@ -21,8 +21,7 @@ public class App {
 		double holeDegrees = circle / numberOfHoles;
 
 		// convert degrees to radians
-		double radians = Math.toRadians(holeDegrees);
-		// convert radians to degrees
+		double radians = Math.toRadians(holeDegrees);		
 
 		float radius = diameter / 2;
 

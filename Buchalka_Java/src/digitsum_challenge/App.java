@@ -4,9 +4,9 @@ public class App {
 
 	public static void main(String[] args) {
 
-		System.out.println("The sum of the digits in 125 " +sumDigits(56));
-		System.out.println("The sum of the digits in 987 " +sumDigits(987));
-		System.out.println("The sum of the digits in 1659 " +sumDigits(1659));
+		System.out.println("The sum of the digits in 125: " + sumDigits(125));
+		// System.out.println("The sum of the digits in 987 " +sumDigits(987));
+		// System.out.println("The sum of the digits in 1659 " +sumDigits(1659));
 
 	}
 
@@ -21,7 +21,9 @@ public class App {
 		while (n > 0) {
 			// extract least significant digit
 			int digit = n % 10;
+			System.out.println("digit: " + digit);
 			sum += digit;
+			System.out.println("sum: " + sum);
 			// drop least significant digit
 			n /= 10; // same as n = n /10;
 		}

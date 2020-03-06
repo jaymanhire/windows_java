@@ -6,10 +6,10 @@ public class Circle {
 
 	public Circle(double radius) {
 		super();
-		this.radius = radius;
-
 		if (radius < 0) {
 			this.radius = 0;
+		} else {
+			this.radius = radius;
 		}
 	}
 
